@@ -68,18 +68,20 @@ aside h1 {
   margin-right: 700px;
   color: #000000;
   font-weight: 500;
+  margin-left: 100px;
 }
 
 main h2 {
-  margin-left: 57px;
-  margin-right: 57px;
+  margin-left: 65px;
+  margin-right: 70px;
   color: #000000;
   font-weight: 500;
   font-size: 36px;
   text-align: left;
 }
 
-h1 span, h2 span {
+h1 span,
+h2 span {
   color: #ff5678;
 }
 
@@ -88,7 +90,7 @@ main {
   width: 600px;
   height: 520px;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 2px;
+  border-radius: 12px;
   grid-area: hero;
   margin-top: 50px;
 }
@@ -106,7 +108,6 @@ main {
 
 .actions a {
   display: flex;
-  flex-wrap: wrap;
   height: 55px;
   width: 489px;
   border-radius: 12px;
@@ -119,8 +120,38 @@ main {
 
 .primary-button {
   background-color: #35E6E9;
+  text-align: center;
+  text-indent: 170px;
 }
 
 .secondary-button {
   background-color: #ff5678;
+  text-indent: 160px;
+}
+
+main p {
+  position: relative;
+  display: flex;
+  color: #000000;
+  height: 27px;
+  width: 488px;
+  top: 79px;
+  margin-left: 75px;
+}
+
+a.link {
+  position: relative;
+  display: flex;
+  color: #000000;
+  height: 27px;
+  width: 488px;
+  top: 60px;
+  margin-left: 175px;
+  flex: content;
+  flex-wrap: wrap;
+  align-content: center;
+  text-decoration: underline;
+}
+a.link:hover {
+  cursor: pointer;
 }

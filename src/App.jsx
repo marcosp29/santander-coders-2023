@@ -52,6 +52,8 @@ function App() {
                 Ver entidades cadastradas
               </a>
             </div>
+              <p>Sua entidade não se enquadra nos campos de atuação disponíveis?</p>
+              <a className="link">Registrar novo campo de atuação</a>
           </div>
         </main>
       </div>
