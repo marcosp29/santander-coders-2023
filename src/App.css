@@ -6,22 +6,37 @@
 }
 
 .logo {
-  height: 6em;
+  height: 16em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.logo.principal:hover {
+  filter: drop-shadow(0 0 2em #fab5c3);
+}
+
+.logo-container {
+  width: 400px;
+  height: 520px;
+  margin: 100px;
+}
+
+aside {
+  margin: 0;
+  padding: 0;
+  grid-area: logo;
 }
 
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +54,73 @@
 
 .read-the-docs {
   color: #888;
+}
+
+main h1 {
+  display: flex;
+  margin-right: 700px;
+  color: #000000;
+  font-weight: 500;
+}
+
+aside h1 {
+  display: flex;
+  margin-right: 700px;
+  color: #000000;
+  font-weight: 500;
+}
+
+main h2 {
+  margin-left: 57px;
+  margin-right: 57px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 36px;
+  text-align: left;
+}
+
+h1 span, h2 span {
+  color: #ff5678;
+}
+
+main {
+  display: flex;
+  width: 600px;
+  height: 520px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  grid-area: hero;
+  margin-top: 50px;
+}
+
+.content {
+  display: grid;
+  grid-template-areas:
+    ". . . ."
+    ". logo hero ."
+    ". logo hero ."
+    ". . . ."
+  ;
+  gap: 8.5px;
+}
+
+.actions a {
+  display: flex;
+  flex-wrap: wrap;
+  height: 55px;
+  width: 489px;
+  border-radius: 12px;
+  color: #F8F8FF;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.primary-button {
+  background-color: #35E6E9;
+}
+
+.secondary-button {
+  background-color: #ff5678;
 }
